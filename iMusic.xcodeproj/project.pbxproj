@@ -10,6 +10,12 @@
 		525484B2195F27A9001EC846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525484B1195F27A9001EC846 /* AppDelegate.swift */; };
 		525484B4195F27A9001EC846 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525484B3195F27A9001EC846 /* Images.xcassets */; };
 		525484C0195F27A9001EC846 /* iMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525484BF195F27A9001EC846 /* iMusicTests.swift */; };
+		525484CB195F2F32001EC846 /* in_my_song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 525484CA195F2F32001EC846 /* in_my_song.mp3 */; };
+		525484CD195F2F77001EC846 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525484CC195F2F77001EC846 /* PlayerViewController.swift */; };
+		525484CF195F3A07001EC846 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525484CE195F3A07001EC846 /* AudioToolbox.framework */; };
+		525484D1195F3C9F001EC846 /* Telephone No Service.caf in Resources */ = {isa = PBXBuildFile; fileRef = 525484D0195F3C9F001EC846 /* Telephone No Service.caf */; };
+		525484D3195F3DB5001EC846 /* in_my_song.wav in Resources */ = {isa = PBXBuildFile; fileRef = 525484D2195F3DB5001EC846 /* in_my_song.wav */; };
+		525484D5195F3F1F001EC846 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525484D4195F3F1F001EC846 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +36,12 @@
 		525484B9195F27A9001EC846 /* iMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		525484BE195F27A9001EC846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525484BF195F27A9001EC846 /* iMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMusicTests.swift; sourceTree = "<group>"; };
+		525484CA195F2F32001EC846 /* in_my_song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = in_my_song.mp3; sourceTree = "<group>"; };
+		525484CC195F2F77001EC846 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		525484CE195F3A07001EC846 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		525484D0195F3C9F001EC846 /* Telephone No Service.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Telephone No Service.caf"; sourceTree = "<group>"; };
+		525484D2195F3DB5001EC846 /* in_my_song.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = in_my_song.wav; sourceTree = "<group>"; };
+		525484D4195F3F1F001EC846 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525484D5195F3F1F001EC846 /* AVFoundation.framework in Frameworks */,
+				525484CF195F3A07001EC846 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +67,9 @@
 		525484A3195F27A9001EC846 = {
 			isa = PBXGroup;
 			children = (
+				525484D4195F3F1F001EC846 /* AVFoundation.framework */,
+				525484CE195F3A07001EC846 /* AudioToolbox.framework */,
+				525484C9195F2F32001EC846 /* Sources */,
 				525484AE195F27A9001EC846 /* iMusic */,
 				525484BC195F27A9001EC846 /* iMusicTests */,
 				525484AD195F27A9001EC846 /* Products */,
@@ -72,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				525484B1195F27A9001EC846 /* AppDelegate.swift */,
+				525484CC195F2F77001EC846 /* PlayerViewController.swift */,
 				525484B3195F27A9001EC846 /* Images.xcassets */,
 				525484AF195F27A9001EC846 /* Supporting Files */,
 			);
@@ -101,6 +119,16 @@
 				525484BE195F27A9001EC846 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		525484C9195F2F32001EC846 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				525484D2195F3DB5001EC846 /* in_my_song.wav */,
+				525484D0195F3C9F001EC846 /* Telephone No Service.caf */,
+				525484CA195F2F32001EC846 /* in_my_song.mp3 */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +210,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525484D3195F3DB5001EC846 /* in_my_song.wav in Resources */,
+				525484CB195F2F32001EC846 /* in_my_song.mp3 in Resources */,
 				525484B4195F27A9001EC846 /* Images.xcassets in Resources */,
+				525484D1195F3C9F001EC846 /* Telephone No Service.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				525484B2195F27A9001EC846 /* AppDelegate.swift in Sources */,
+				525484CD195F2F77001EC846 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +409,7 @@
 				525484C5195F27A9001EC846 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		525484C6195F27A9001EC846 /* Build configuration list for PBXNativeTarget "iMusicTests" */ = {
 			isa = XCConfigurationList;
@@ -385,6 +418,7 @@
 				525484C8195F27A9001EC846 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
